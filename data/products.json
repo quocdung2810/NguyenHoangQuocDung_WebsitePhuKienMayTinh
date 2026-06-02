@@ -1,0 +1,23 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Chuột gaming RGB GX-01",
+    "category": "Chuột",
+    "price": 350000,
+    "description": "Chuột gaming có đèn RGB, cảm biến nhạy và thiết kế công thái học."
+  },
+  {
+    "id": 2,
+    "name": "Bàn phím cơ K87",
+    "category": "Bàn phím",
+    "price": 790000,
+    "description": "Bàn phím cơ layout gọn, phù hợp học tập, làm việc và chơi game."
+  },
+  {
+    "id": 3,
+    "name": "Tai nghe gaming H7",
+    "category": "Tai nghe",
+    "price": 520000,
+    "description": "Tai nghe có micro, âm thanh rõ và đệm tai thoải mái."
+  }
+]

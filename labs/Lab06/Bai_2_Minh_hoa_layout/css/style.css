@@ -1,0 +1,57 @@
+/* Thiết lập chung cho mọi kích thước màn hình */
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%; /* Mặc định xếp chồng 1 cột (cho màn hình nhỏ) */
+}
+
+.header-flex-2 { background: tomato; order: 1; }
+.main { background: deepskyblue; text-align: left; min-height: 200px; order: 2; }
+.aside-1 { background: gold; order: 3; }
+.aside-2 { background: hotpink; order: 4; }
+.footer-flex-2 { background: lightgreen; order: 5; }
+
+/* Mốc 1: Khi màn hình rộng từ 600px trở lên (Layout 2 cột cho các phần Aside) */
+@media all and (min-width: 600px) {
+    .main {
+        flex: 1 100%; /* Main vẫn chiếm hết chiều ngang */
+    }
+
+	.main img {
+		width: 100%;
+	}
+    .aside {
+        flex: 1; /* Aside 1 và Aside 2 chia đôi không gian (mỗi bên 50%) */
+    }
+    .aside-1 { order: 3; }
+    .aside-2 { order: 4; }
+}
+
+/* Mốc 2: Khi màn hình rộng từ 1200px trở lên (Layout 3 cột: Aside 1 - Main - Aside 2) */
+@media all and (min-width: 1200px) {
+    .main {
+        flex: 3 0px; /* Main chiếm 3 phần không gian */
+        order: 2;
+    }
+    .aside-1 {
+        flex: 1; 
+        order: 1; /* Aside 1 nhảy sang bên trái Main */
+    }
+    .aside-2 {
+        flex: 1;
+        order: 3; /* Aside 2 nằm bên phải Main */
+    }
+    .footer-flex-2 {
+        order: 4;
+    }
+
+	.main img {
+		width: 100%;
+	}
+}

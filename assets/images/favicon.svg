@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="QD favicon">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#20f5df"/>
+      <stop offset="0.48" stop-color="#00a99d"/>
+      <stop offset="1" stop-color="#0f1b2d"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="10" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eafffb"/>
+      <stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#22d3ee" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#08111f"/>
+  <rect x="5" y="5" width="54" height="54" rx="14" fill="url(#bg)" filter="url(#glow)"/>
+  <rect x="9" y="9" width="46" height="46" rx="11" fill="none" stroke="url(#edge)" stroke-width="2"/>
+  <path d="M16 26.5c0-6.2 4.5-10.5 10.8-10.5 6.2 0 10.7 4.3 10.7 10.5v11c0 6.2-4.5 10.5-10.7 10.5C20.5 48 16 43.7 16 37.5v-11Zm6.5 11c0 2.9 1.7 4.7 4.3 4.7s4.2-1.8 4.2-4.7v-11c0-2.9-1.6-4.7-4.2-4.7s-4.3 1.8-4.3 4.7v11Z" fill="#ffffff"/>
+  <path d="M38.8 16.5h8.6c6 0 10.1 4.1 10.1 10.2v10.6c0 6.1-4.1 10.2-10.1 10.2h-8.6v-31Zm6.4 5.9v19.2h2.1c2.4 0 3.8-1.6 3.8-4.3V26.7c0-2.7-1.4-4.3-3.8-4.3h-2.1Z" fill="#ffffff"/>
+  <circle cx="42.2" cy="46.5" r="4.5" fill="#08111f" stroke="#ffffff" stroke-width="2.5"/>
+</svg>

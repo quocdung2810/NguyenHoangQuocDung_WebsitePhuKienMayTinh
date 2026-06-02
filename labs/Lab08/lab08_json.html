@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg">
+</head>
+<body>
+    <h1>
+        User Information
+    </h1>
+
+    <div id="userInfo">
+        <p>Name: Nguyen Van A</p>
+        <p>Age: 30</p>
+        <p>Email: nguyenvana@gmail.com</p>
+        <p>Address: Ho Chi Minh</p>
+    </div>
+
+    <script>
+        var userData = {
+        "name":"Nguyen Van A",
+        "age":"30",
+        "email":"nguyenvana@gmail.com",
+        "address":"Ho Chi Minh"
+        }
+
+        function displayUserInfo(data) {
+            var userInfoElement = document.getElementById('userInfo');
+            userInfoElement.innerHTML = `
+            <p><strong>Name:</strong> ${data.name} </p>
+            <p><strong>Age:</strong> ${data.age} </p>
+            <p><strong>Email:</strong> ${data.email} </p>
+            <p><strong>Address:</strong> ${data.address} </p>
+            `
+        }
+        displayUserInfo(userData)
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,62 @@
+.menu_ngang {
+    display: flex;
+    min-height: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu_ngang li {
+    background-color: aquamarine;
+    line-height: 30px;
+    padding: 10px;
+    font-size: 20px ;
+    font-weight: bolder;
+}
+
+.menu_ngang li a{
+    text-decoration: none;
+}
+
+.menu_ngang li:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.menu_ngang li a:hover {
+    color: white;
+}
+
+.menu_doc {
+    background-color:cornflowerblue;
+    color: black; 
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    width: 250px;
+}
+
+.menu_doc li {
+    line-height: 30px;
+    height: 40px;
+    border-bottom: 1px solid white;
+}
+
+.menu_doc li a {
+    text-decoration: none;
+}
+
+.menu_doc li:hover {
+    background-color: rgb(151, 231, 255);
+}
+
+.menu_doc li a:hover {
+    font-style: italic;
+}
+
+.fontaicap {
+    font-family: "Noto Sans Meroitic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QDung Gear - Phụ kiện máy tính</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="css/style.css?v=37">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand tech-logo" href="index.html">
+      <span class="brand-mark">QD</span>
+      <span class="brand-text"><strong>QDUNG</strong><small>GEAR</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Mở menu">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="products.html">Sản phẩm</a>
+      <a href="cart.html">Giỏ hàng</a>
+      <a href="contact.html">Liên hệ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="blog.html">Blog</a>
+      <a href="labs.html">Lab thực hành</a>
+    </nav>
+  </header>
+
+  <section class="quick-shopbar" aria-label="Công cụ mua hàng nhanh">
+    <form class="quick-search" action="products.html">
+      <input type="search" name="q" placeholder="Tìm chuột, bàn phím, tai nghe...">
+      <button type="submit">Tìm kiếm</button>
+    </form>
+    <div class="quick-actions">
+      <a href="login.html">Đăng nhập</a>
+      <a class="quick-cart" href="cart.html">Giỏ hàng <span class="cart-count">0</span></a>
+    </div>
+  </section>
+
+  <main>
+    <section class="hero store-hero">
+      <div>
+        <p class="eyebrow">Gaming gear & phụ kiện máy tính</p>
+        <h1>Nâng cấp góc học tập, làm việc và chơi game của bạn</h1>
+        <p>Chuột, bàn phím, tai nghe, webcam, hub USB-C và phụ kiện laptop được trình bày theo phong cách công nghệ, dễ tìm, dễ mua.</p>
+        <div class="button-row">
+          <a class="button" href="products.html">Xem sản phẩm</a>
+          <a class="button button-light" href="labs.html">Xem Lab thực hành</a>
+        </div>
+      </div>
+      <aside class="hero-side-panel">
+        <p class="eyebrow">Ưu đãi hôm nay</p>
+        <h2>Combo học online</h2>
+        <p>Webcam Full HD + Tai nghe gaming + Hub USB-C.</p>
+        <strong>Tiết kiệm đến 15%</strong>
+      </aside>
+    </section>
+
+    <section class="section home-showcase">
+      <aside class="category-menu">
+        <h2>Danh mục sản phẩm</h2>
+        <div class="category-menu__grid">
+          <a href="products.html?q=chuột"><span>MS</span>Chuột gaming</a>
+          <a href="products.html?q=bàn%20phím"><span>KB</span>Bàn phím cơ</a>
+          <a href="products.html?q=tai%20nghe"><span>HP</span>Tai nghe</a>
+          <a href="products.html?q=webcam"><span>CM</span>Webcam</a>
+          <a href="products.html?q=hub"><span>HB</span>Hub USB-C</a>
+          <a href="products.html?q=lót%20chuột"><span>PD</span>Lót chuột</a>
+          <a href="products.html?q=loa"><span>SP</span>Loa vi tính</a>
+          <a href="products.html?q=tay%20cầm"><span>GP</span>Tay cầm</a>
+          <a href="products.html?q=keycap"><span>KC</span>Keycap</a>
+          <a href="products.html?q=giá%20đỡ"><span>ST</span>Giá đỡ</a>
+          <a href="products.html?q=cáp"><span>CB</span>Cáp & HDMI</a>
+          <a href="products.html?q=wifi"><span>WF</span>USB WiFi</a>
+        </div>
+      </aside>
+      <div class="promo-grid">
+        <article>
+          <span>Freeship</span>
+          <strong>Đơn từ 500.000đ</strong>
+          <p>Áp dụng cho chuột, bàn phím, tai nghe và phụ kiện setup góc học tập.</p>
+          <em>Voucher demo: QDUNGSHIP</em>
+        </article>
+        <article>
+          <span>Bảo hành</span>
+          <strong>Hỗ trợ 12 tháng</strong>
+          <p>Đổi trả 15 ngày với sản phẩm lỗi, hỗ trợ kiểm tra thiết bị trước khi mua.</p>
+          <em>Cam kết: rõ thông tin</em>
+        </article>
+        <article>
+          <span>Tư vấn</span>
+          <strong>Chọn gear theo nhu cầu</strong>
+          <p>Gợi ý combo học online, văn phòng, gaming, livestream theo ngân sách.</p>
+          <em>Hotline: 0815047218</em>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="section-title-row">
+        <div><p class="eyebrow">Sản phẩm bán chạy</p><h2>Được chọn nhiều</h2></div>
+        <a href="products.html">Xem tất cả</a>
+      </div>
+      <div id="bestSellerProducts" class="product-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title-row">
+        <div><p class="eyebrow">Danh mục nổi bật</p><h2>Mua nhanh theo nhu cầu</h2></div>
+      </div>
+      <div class="category-grid">
+        <a href="products.html?q=gaming"><article><span class="category-code">GG</span><span class="category-title">Gaming</span><span class="category-desc">Chuột, bàn phím, tai nghe, tay cầm</span></article></a>
+        <a href="products.html?q=học%20online"><article><span class="category-code">OL</span><span class="category-title">Học online</span><span class="category-desc">Webcam, tai nghe, micro, hub USB-C</span></article></a>
+        <a href="products.html?q=văn%20phòng"><article><span class="category-code">OF</span><span class="category-title">Văn phòng</span><span class="category-desc">Chuột silent, giá đỡ, đèn màn hình</span></article></a>
+        <a href="products.html?q=livestream"><article><span class="category-code">LS</span><span class="category-title">Livestream</span><span class="category-desc">Micro, webcam, đèn và phụ kiện setup</span></article></a>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="section-title-row">
+        <div><p class="eyebrow">Bộ sưu tập mới</p><h2>Gear mới về</h2></div>
+      </div>
+      <div id="newCollectionProducts" class="product-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title-row">
+        <div><p class="eyebrow">Tin tức</p><h2>Gợi ý chọn phụ kiện</h2></div>
+        <a href="blog.html">Xem Blog</a>
+      </div>
+      <div class="news-grid">
+        <a href="blog.html?post=chon-chuot-gaming"><article><span>Gaming</span><h3>Cách chọn chuột phù hợp kích thước tay</h3><p>DPI, form cầm và trọng lượng ảnh hưởng lớn đến trải nghiệm chơi game.</p><em>Đọc bài viết</em></article></a>
+        <a href="blog.html?post=combo-hoc-online"><article><span>Học tập</span><h3>Combo học online gọn cho sinh viên</h3><p>Webcam, tai nghe và hub USB-C giúp buổi học ổn định hơn.</p><em>Đọc bài viết</em></article></a>
+        <a href="blog.html?post=setup-ban-lam-viec"><article><span>Setup</span><h3>Giữ bàn làm việc gọn với phụ kiện đúng</h3><p>Lót chuột lớn, hub kết nối và đế tản nhiệt giúp góc máy sạch hơn.</p><em>Đọc bài viết</em></article></a>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div>
+        <p class="eyebrow">Đăng ký nhận bản tin</p>
+        <h2>Nhận thông tin sản phẩm mới và ưu đãi</h2>
+      </div>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" name="email" placeholder="Nhập email của bạn" required>
+        <button class="button" type="submit">Đăng ký</button>
+        <p id="newsletterMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand tech-logo footer-logo" href="index.html">
+          <span class="brand-mark">QD</span>
+          <span class="brand-text"><strong>QDUNG</strong><small>GEAR</small></span>
+        </a>
+        <p>Website bán phụ kiện máy tính, phục vụ học tập, làm việc và gaming.</p>
+      </div>
+      <div class="footer-info">
+        <h2>Thông tin</h2>
+        <p><strong>Địa chỉ:</strong> 213 Đường Bình Đông, Phường 11, Quận 8, TP Hồ Chí Minh</p>
+        <p><strong>Email:</strong> DH52300259@student.stu.edu.vn</p>
+        <p><strong>Điện thoại:</strong> 0815047218</p>
+      </div>      <div class="footer-help">
+        <h2>Trợ giúp</h2>
+        <ul>
+          <li><a href="help.html#policies">Chính sách của chúng tôi</a></li>
+          <li><a href="account.html">Theo dõi đơn hàng</a></li>
+          <li><a href="help.html#returns">Chính sách trả hàng</a></li>
+          <li><a href="help.html#payments">Phương thức thanh toán</a></li>
+          <li><a href="help.html#faq">Hỏi đáp</a></li>
+          <li><a href="about.html">Giới thiệu về QDung</a></li>
+        </ul>
+      </div>
+      <div class="footer-map">
+        <iframe
+          title="Bản đồ vị trí QDung Gear"
+          src="https://www.google.com/maps?q=213%20%C4%90%C6%B0%E1%BB%9Dng%20B%C3%ACnh%20%C4%90%C3%B4ng%2C%20Ph%C6%B0%E1%BB%9Dng%2011%2C%20Qu%E1%BA%ADn%208%2C%20TP%20H%E1%BB%93%20Ch%C3%AD%20Minh&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="footer-bottom">Họ và tên: Nguyễn Hoàng Quốc Dũng | MSSV: DH52300259 | Lớp: D23_TH04 | Nhóm 9 Thứ 7 Ca 3</div>
+  </footer>
+  <script src="js/main.js?v=39"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

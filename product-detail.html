@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm - QDung Gear</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="css/style.css?v=37">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand tech-logo" href="index.html">
+      <span class="brand-mark">QD</span>
+      <span class="brand-text"><strong>QDUNG</strong><small>GEAR</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Mở menu">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="products.html">Sản phẩm</a>
+      <a href="cart.html">Giỏ hàng</a>
+      <a href="contact.html">Liên hệ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="blog.html">Blog</a>
+      <a href="labs.html">Lab thực hành</a>
+    </nav>
+  </header>
+
+  <section class="quick-shopbar" aria-label="Công cụ mua hàng nhanh">
+    <form class="quick-search" action="products.html">
+      <input type="search" name="q" placeholder="Tìm chuột, bàn phím, tai nghe...">
+      <button type="submit">Tìm kiếm</button>
+    </form>
+    <div class="quick-actions">
+      <a href="login.html">Đăng nhập</a>
+      <a class="quick-cart" href="cart.html">Giỏ hàng <span class="cart-count">0</span></a>
+    </div>
+  </section>
+
+  <main class="section page-section detail-layout product-detail-page">
+    <section class="product-gallery" aria-label="Hình ảnh sản phẩm">
+      <div class="gallery-main">
+        <img id="detailMainImage" src="" alt="Ảnh sản phẩm">
+      </div>
+      <div class="gallery-strip-wrap">
+        <button class="gallery-nav" type="button" data-gallery-prev aria-label="Ảnh trước">‹</button>
+        <div id="detailThumbs" class="gallery-strip"></div>
+        <button class="gallery-nav" type="button" data-gallery-next aria-label="Ảnh sau">›</button>
+      </div>
+      <div class="detail-share">
+        <span>Chia sẻ:</span>
+        <button type="button" data-share-platform="facebook">f</button>
+        <button type="button" data-share-platform="google">G</button>
+        <button type="button" data-share-platform="x">X</button>
+        <button class="like-mark" type="button" data-favorite-toggle>♡ Yêu thích</button>
+      </div>
+      <section class="related-panel">
+        <div class="section-title-row">
+          <div><p class="eyebrow">Gợi ý thêm</p><h2>Sản phẩm tương tự</h2></div>
+        </div>
+        <div id="relatedProducts" class="related-grid"></div>
+      </section>
+    </section>
+
+    <section class="detail-info">
+      <p class="eyebrow">Phụ kiện máy tính</p>
+      <h1 id="detailName">Chuột gaming RGB GX-01</h1>
+      <p id="detailPrice" class="price">350.000đ</p>
+      <div class="voucher-row">
+        <span>Giảm 10%</span>
+        <span>Giảm 7%</span>
+      </div>
+      <p id="detailDesc">Chuột gaming thiết kế công thái học, cảm biến nhạy, đèn RGB và nút bấm bền bỉ.</p>
+      <dl class="detail-meta">
+        <div><dt>Vận chuyển</dt><dd>Freeship đơn từ 500.000đ</dd></div>
+        <div><dt>Bảo hành</dt><dd>Đổi trả 15 ngày, hỗ trợ 12 tháng</dd></div>
+        <div><dt>Kho hàng</dt><dd id="detailStock">Còn hàng tại QDung Gear</dd></div>
+      </dl>
+      <div class="detail-actions">
+        <button class="button button-light" type="button" data-detail-add>Thêm vào giỏ hàng</button>
+        <button class="button buy-now-button" type="button" data-detail-buy>Mua ngay</button>
+      </div>
+      <div id="detailExtra" class="detail-extra"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand tech-logo footer-logo" href="index.html">
+          <span class="brand-mark">QD</span>
+          <span class="brand-text"><strong>QDUNG</strong><small>GEAR</small></span>
+        </a>
+        <p>Website bán phụ kiện máy tính, phục vụ học tập, làm việc và gaming.</p>
+      </div>
+      <div class="footer-info">
+        <h2>Thông tin</h2>
+        <p><strong>Địa chỉ:</strong> 213 Đường Bình Đông, Phường 11, Quận 8, TP Hồ Chí Minh</p>
+        <p><strong>Email:</strong> DH52300259@student.stu.edu.vn</p>
+        <p><strong>Điện thoại:</strong> 0815047218</p>
+      </div>      <div class="footer-help">
+        <h2>Trợ giúp</h2>
+        <ul>
+          <li><a href="help.html#policies">Chính sách của chúng tôi</a></li>
+          <li><a href="account.html">Theo dõi đơn hàng</a></li>
+          <li><a href="help.html#returns">Chính sách trả hàng</a></li>
+          <li><a href="help.html#payments">Phương thức thanh toán</a></li>
+          <li><a href="help.html#faq">Hỏi đáp</a></li>
+          <li><a href="about.html">Giới thiệu về QDung</a></li>
+        </ul>
+      </div>
+      <div class="footer-map">
+        <iframe
+          title="Bản đồ vị trí QDung Gear"
+          src="https://www.google.com/maps?q=213%20%C4%90%C6%B0%E1%BB%9Dng%20B%C3%ACnh%20%C4%90%C3%B4ng%2C%20Ph%C6%B0%E1%BB%9Dng%2011%2C%20Qu%E1%BA%ADn%208%2C%20TP%20H%E1%BB%93%20Ch%C3%AD%20Minh&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="footer-bottom">Họ và tên: Nguyễn Hoàng Quốc Dũng | MSSV: DH52300259 | Lớp: D23_TH04 | Nhóm 9 Thứ 7 Ca 3</div>
+  </footer>
+
+  <script src="js/main.js?v=39"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
